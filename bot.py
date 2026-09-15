@@ -1231,8 +1231,8 @@ def main():
     
     beijing_tz = ZoneInfo("Asia/Shanghai")
     
-    daily_time = datetime_time(3, 0, 0, tzinfo=beijing_tz)
-    cleanup_time = datetime_time(3, 10, 0, tzinfo=beijing_tz)
+    daily_time = datetime_time(4, 0, 0, tzinfo=beijing_tz)
+    cleanup_time = datetime_time(4, 10, 0, tzinfo=beijing_tz)
     
     jq.run_daily(send_daily_report, daily_time)
     jq.run_daily(data_manager.cleanup_old_data, cleanup_time)
